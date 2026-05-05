@@ -10,14 +10,14 @@ def home():
 def chat():
     user_message = request.json["message"].lower()
 
-    if user_message == "hello":
-        reply = "Hi there!"
-    elif user_message == "how are you":
-        reply = "I'm doing great!"
-    elif user_message == "bye":
-        reply = "Goodbye!"
-    else:
-        reply = "I don't understand that."
+    reply = """Initializing… ⚡
+Connection established.
+I am an AI system created by Yasar Yoosuf—ready to assist, answer, and adapt.
+
+⚠️ This system is currently under development.
+Responses to your input may not be available yet.
+
+Thank you for your patience. 🚀"""
 
     return jsonify({"reply": reply})
 
